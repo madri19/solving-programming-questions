@@ -44,8 +44,10 @@ int main () {
  pointer = pointer+strlen(pointer)+1;
  if(strcmp(pointer, "false") == 0)
   data_handler.flag = 0;
- else
+ else if(strcmp(pointer, "true") == 0)
   data_handler.flag = 1;
+ else
+  data_handler.flag = -1;
    
    
   printf( " %d\n", data_handler.value );
