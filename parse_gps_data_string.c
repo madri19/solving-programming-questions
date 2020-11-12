@@ -31,7 +31,7 @@ int main () {
 
  char *pointer = str;
 
- //do some pinter math as you iteract through all the separate strings and convert the value to the approppriate data type and assign it to our struct object.
+ //do some pointer math as you iteract through all the separate strings and convert the value to the approppriate data type and assign it to our struct object.
  data_handler.value = atoi(pointer);
  pointer = str+strlen(str)+1;
  data_handler.name = pointer;
