@@ -22,7 +22,7 @@ int first_bit_position(int num)
     while(1)
     {
         // Shift left a bit with the value of i and mask it with the number and shift the bit standing if there is one to the right i times.
-        // This way either test == 1 or test == 0which helps for the if statement.
+        // This way either test == 1 or test == 0 which helps for the if statement.
         test = (num & (0x0001 << i)) >> i;
         
         if(test)
